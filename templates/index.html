@@ -2,7 +2,8 @@
  <body>
 
   <form action="{{ url_for('poem') }}" method="post" class="poem">
-    <textarea name="story" rows="4" cols="50">Enter short story here</textarea>
+    <h3>Enter a poem to get a remixed version of the poem with the specific number of lines you specify!</h3>
+    <textarea name="story" rows="4" cols="50">Enter poem here</textarea>
     <br />
     Number of lines:
     <select name="lines">
