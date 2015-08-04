@@ -7,6 +7,22 @@ Under the hood, this generates Markov Chains based on your input and spits back 
 
 Super basic, and simply an experiment with Markov Chains!
 
+View it live here: http://poem-remixer.herokuapp.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Some cool poems to try:
 
 http://www.poetry-archive.com/b/cradle_song.html
