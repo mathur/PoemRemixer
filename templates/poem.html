@@ -1,0 +1,17 @@
+<html>
+ <body>
+  <div align="center" style="padding-top:20px;">
+   <h2>
+   {% for line in result %}
+     {{ line }}<br />
+   {% endfor %}
+   </h2>
+   <h3>Original poem:</h3>
+   <h2>{{ story }}</h2>
+   <br />
+   <form action="{{ url_for('index') }}">
+   	<input type="submit" value="Go again!" />
+   </form>
+  </div>
+ </body>
+</html>

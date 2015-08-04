@@ -1,0 +1,18 @@
+<html>
+ <body>
+
+  <form action="{{ url_for('poem') }}" method="post" class="poem">
+    <textarea name="story" rows="4" cols="50">Enter short story here</textarea>
+    <br />
+    Number of lines:
+    <select name="lines">
+      {% for n in range(1,25) %}
+        <option value="{{n}}">{{n}}</option>
+      {% endfor %}
+    </select>
+    <br /><br />
+    <input class="button" type="submit" value="Generate a poem!">
+  </form>
+
+ </body>
+</html>
