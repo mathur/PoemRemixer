@@ -14,7 +14,7 @@ def index():
 
 @app.route('/poem', methods=['POST'])
 def poem():
-    story = str(request.form['story'])
+    story = str(request.form['story'].encode('ascii', 'ignore'))
     lines = int(request.form['lines'])
 
     if not story:
@@ -32,4 +32,4 @@ def poem():
     return render_template('poem.html', result=result, story=story)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=PORT)
+    app.run(host='0.0.0.0', port=PORT, debug=False)
